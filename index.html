@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>control-canales</title>
+<meta name="description" content="Herramienta personal de solo lectura para seguir las estadísticas de mis propios canales de YouTube.">
+<style>
+  :root {
+    --fondo: #f7f6f2;
+    --superficie: #ffffff;
+    --texto: #1d1d1b;
+    --texto-suave: #4a4a46;
+    --borde: #dcdad2;
+    --acento: #1f5fbf;
+    --foco: #1f5fbf;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #16171a;
+      --superficie: #1f2024;
+      --texto: #ecebe6;
+      --texto-suave: #b9b8b1;
+      --borde: #34353b;
+      --acento: #8ab4ff;
+      --foco: #8ab4ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 16px 64px;
+  }
+  .tarjeta {
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  p, li { color: var(--texto-suave); }
+  ul { padding-left: 1.2em; }
+  a {
+    color: var(--acento);
+    text-underline-offset: 3px;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  a:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  footer { margin-top: 24px; font-size: 0.9rem; color: var(--texto-suave); }
+  @media (prefers-reduced-motion: no-preference) {
+    a { transition: color 300ms ease; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="tarjeta">
+    <h1>control-canales</h1>
+    <p>Herramienta personal de solo lectura. La uso para seguir las estadísticas de mis propios canales de YouTube:
+      vistas, tiempo de reproducción, retención, impresiones y la configuración de cada video.</p>
+
+    <h2>Cómo funciona</h2>
+    <ul>
+      <li>Se conecta con la YouTube Data API y la YouTube Analytics API, con permisos de solo lectura
+        (<code>youtube.readonly</code> y <code>yt-analytics.readonly</code>).</li>
+      <li>No publica, no edita y no borra nada en YouTube.</li>
+      <li>Solo la uso yo, con mis propias cuentas. No está abierta al público ni tiene usuarios externos.</li>
+    </ul>
+
+    <h2>Privacidad</h2>
+    <p>Qué datos lee, dónde se guardan y cómo revocar el acceso:
+      <a href="privacy.html">Política de privacidad</a>.</p>
+  </div>
+  <footer>control-canales · uso personal</footer>
+</main>
+</body>
+</html>

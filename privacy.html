@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · control-canales</title>
+<meta name="description" content="Política de privacidad de control-canales, herramienta personal de solo lectura para YouTube.">
+<style>
+  :root {
+    --fondo: #f7f6f2;
+    --superficie: #ffffff;
+    --texto: #1d1d1b;
+    --texto-suave: #4a4a46;
+    --borde: #dcdad2;
+    --acento: #1f5fbf;
+    --foco: #1f5fbf;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #16171a;
+      --superficie: #1f2024;
+      --texto: #ecebe6;
+      --texto-suave: #b9b8b1;
+      --borde: #34353b;
+      --acento: #8ab4ff;
+      --foco: #8ab4ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 16px 64px;
+  }
+  .tarjeta {
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .fecha { margin: 0 0 16px; font-size: 0.95rem; }
+  p, li { color: var(--texto-suave); }
+  ul { padding-left: 1.2em; }
+  a {
+    color: var(--acento);
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+  }
+  a:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  .volver { display: inline-block; min-height: 44px; line-height: 44px; margin-bottom: 8px; }
+  @media (prefers-reduced-motion: no-preference) {
+    a { transition: color 300ms ease; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="volver" href="./">← control-canales</a>
+  <div class="tarjeta">
+    <h1>Política de privacidad</h1>
+    <p class="fecha">Última actualización: 16 de octubre de 2026</p>
+
+    <p><strong>control-canales</strong> es una herramienta personal. La uso solo yo, con mis propias cuentas, para
+      seguir las estadísticas de mis canales de YouTube. No está abierta al público.</p>
+
+    <h2>Servicios de la API de YouTube</h2>
+    <p>Esta herramienta usa los Servicios de la API de YouTube. Al autorizarla, aceptás las
+      <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a>. Los datos que maneja Google se
+      rigen por la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+
+    <h2>Qué datos lee</h2>
+    <ul>
+      <li>Datos de los canales autorizados: lista de videos, título, descripción, estado, duración y configuración de
+        cada video.</li>
+      <li>Estadísticas de YouTube Analytics: vistas, tiempo de reproducción, retención, suscriptores, impresiones y
+        fuentes de tráfico.</li>
+    </ul>
+    <p>Los permisos son de solo lectura (<code>youtube.readonly</code> y <code>yt-analytics.readonly</code>). La
+      herramienta no publica, no edita y no borra nada en YouTube.</p>
+
+    <h2>Para qué se usan</h2>
+    <p>Solo para medir el rendimiento de mis propios canales y decidir mejoras de contenido. No se usan con fines
+      publicitarios.</p>
+
+    <h2>Dónde se guardan</h2>
+    <ul>
+      <li>Los datos y los permisos de acceso se guardan en mi computadora personal.</li>
+      <li>Los resúmenes se procesan con Claude, de Anthropic, para armar un tablero privado que solo veo yo.</li>
+      <li>No se venden ni se comparten con nadie más.</li>
+    </ul>
+
+    <h2>Cookies</h2>
+    <p>Este sitio no usa cookies.</p>
+
+    <h2>Cómo revocar el acceso</h2>
+    <p>El acceso se revoca en cualquier momento desde la
+      <a href="https://security.google.com/settings/security/permissions">configuración de seguridad de la cuenta de
+      Google</a>. Al revocarlo, la herramienta deja de leer datos y borro los permisos guardados.</p>
+
+    <h2>Contacto</h2>
+    <p>Por el correo de asistencia que figura en la pantalla de consentimiento de Google de esta herramienta.</p>
+  </div>
+</main>
+</body>
+</html>
